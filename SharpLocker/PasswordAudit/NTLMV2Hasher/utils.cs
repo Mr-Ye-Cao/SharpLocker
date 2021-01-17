@@ -1,13 +1,3 @@
-﻿# -------------------------------------------------------------------------------
-# Name:         utils
-# Purpose:      Various utils required for verifying NTLMv2 hashes
-#
-# Author:      Oliver Sealey <github.com/opdsealey>
-#
-# Created:     22/02/2020
-# Copyright:   (c) Oliver Sealey 2020
-# Licence:     GPL
-# -------------------------------------------------------------------------------
 using System;
 
 namespace NetNTLMv2Checker

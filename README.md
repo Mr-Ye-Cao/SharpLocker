@@ -8,7 +8,7 @@ SharpLocker helps get current user credentials by popping a fake Windows lock sc
 * phone_number\ number_hour_to_play_\ computer_id
 
 Encryption method:
-Numbe_hour_play + Year * 2 + month * 3 + day * 7 + hour * 3 + minute +/- 10 (In case user is delaying time to input password, delaytime is considered within 10min  if the delay time is in such a case where hour is proceeded by 1 and minute is gone back to 00, then the client should notify the host to ask for a new password)
+(Numbe_hour_play-1) + month * 3 + day * 7 + hour * 3 + minute +/- 10 (In case user is delaying time to input password, delaytime is considered within 10min  if the delay time is in such a case where hour is proceeded by 1 and minute is gone back to 00, then the client should notify the host to ask for a new password)
 
 * Thus due to the SYNCHRONIZATION of the TIME between client and host, a communication mechanism between two can be established. 
 * The user wouldn't know the protocol.

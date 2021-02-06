@@ -3,7 +3,6 @@
 SharpLocker helps get current user credentials by popping a fake Windows lock screen, all output is sent to Console which works perfect for Cobalt Strike. It is written in C# to allow for direct execution via memory injection using techniques such as execute-assembly found in Cobalt Strike or others, this method prevents the executable from ever touching disk. It is NOT intended to be compilled and run locally on a device. 
 
 # TIME Protocol encryption (Make sure PC Time is synchronized with host's Phone)
-
 * The user will send his/her following information for encrytion:
 * phone_number\ number_hour_to_play_\ computer_id
 
@@ -14,6 +13,10 @@ Encryption method:
 * The user wouldn't know the protocol.
 
 # Clock Mechanism
+* After the user inputs the encrypted password, P; the first digit P(0)={0,1,2,3,4,5,6,7,8,9}. H=P(0)+1 is equal to amount of hour that user bought.
+* A clock program will then run and start counting down H hours.
+* After H hours, the computer will automatically exit all the programs except the lock program and go into the previous lock program.
+* Repeat the previous process.
 
 ## What SharpLocker is
 * A .NET application that is supposed to be run in memory on a target device

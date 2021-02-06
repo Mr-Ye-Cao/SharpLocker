@@ -124,7 +124,6 @@ $$\   $$ |$$ |  $$ |$$  __$$ |$$ |      $$ |  $$ |$$ |     $$ |  $$ |$$ |      $
             startmonologue(plainpassword);
             Taskbar.Show();
             Application.Exit();
-
         }
 
         private void LockScreenForm_Load(object sender, EventArgs e)
